@@ -28,7 +28,6 @@ if [ $TF_ACTION = "APPLY" ]
 then
   echo "Running apply"
   terraform apply -var-file="terraform.$WORKSPACE_NAME.tfvars" -auto-approve
-  terraform output > tf_output.txt
 fi
 
 if [ $TF_ACTION = "DESTROY" ]
