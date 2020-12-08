@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import os
 
 WORKSPACE = os.environ.get('WORKSPACE_NAME')
