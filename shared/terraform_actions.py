@@ -3,7 +3,7 @@ set -e
 
 import os
 
-WORKSPACE = os.environ.get('WORKSPACE_NAME')
+WORKSPACE = os.environ.get('$WORKSPACE_NAME')
 print(WORKSPACE)
 terraform -v
 
