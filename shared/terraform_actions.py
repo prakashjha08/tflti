@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+set -e
 
 import os
 
