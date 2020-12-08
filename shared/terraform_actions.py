@@ -4,7 +4,7 @@ import os
 
 WORKSPACE = os.environ.get('WORKSPACE_NAME')
 print(WORKSPACE)
-terraform --v
+terraform -v
 
 #terraform fmt -diff=true -list=true -write=false
 
