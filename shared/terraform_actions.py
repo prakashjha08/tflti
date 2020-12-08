@@ -3,11 +3,9 @@
 import os
 
 WORKSPACE = os.environ.get('WORKSPACE_NAME')
+terraform --v
 
-terraform fmt \
-          -diff=true \
-          -list=true \
-          -write=false
+terraform fmt -diff=true -list=true -write=false
 
 ##terraform init -force-copy -backend-config="key=prakash/terraform.tfstate" -backend-config="prakashawsbucketforterraform"
 terraform get -update
