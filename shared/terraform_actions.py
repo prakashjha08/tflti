@@ -1,6 +1,6 @@
 import os
 
-WORKSPACE = os.environ.get('${WORKSPACE_NAME}')
+WORKSPACE = os.environ.get('WORKSPACE_NAME')
 
 terraform fmt \
           -diff=true \
