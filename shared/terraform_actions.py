@@ -3,7 +3,7 @@
 
 import os
 import subprocess
-subprocess.call(["ls", "-l","terraform -v"])
+subprocess.call(["terraform", "-v"])
 #WORKSPACE = os.environ.get('$WORKSPACE_NAME')
 #print(WORKSPACE)
 #terraform -v
