@@ -7,7 +7,7 @@ import shlex
 
 subprocess.call(["terraform", "-v"])
 
-subprocess.run(shlex.split(terraform fmt -diff=true -list=true -write=false))
+subprocess.run(shlex.split('terraform fmt -diff=true -list=true -write=false'))
 print('Terraform worked')
 #WORKSPACE = os.environ.get('$WORKSPACE_NAME')
 #print(WORKSPACE)
