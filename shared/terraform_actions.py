@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-set -e
+#set -e
 
 import os
 import subprocess
