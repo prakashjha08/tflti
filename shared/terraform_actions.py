@@ -23,9 +23,9 @@ subprocess.run(shlex.split('terraform state pull'))
 
 subprocess.run(shlex.split('terraform validate -var-file=dev.tfvars'))
 
-subprocess.run(shlex.split('terraform plan -var-file=dev.tfvars -no-color'))
-#subprocess.run(shlex.split('terraform plan --out=WORKSPACE/latestPlan.json -var-file=dev.tfvars -no-color'))
-subprocess.run(shlex.split('aws s3 cp WORKSPACE/latestPlan.json s3://prakashawsbucketforterraform/output/WORKSPACE-tfoutput.txt'))
+#subprocess.run(shlex.split('terraform plan -var-file=dev.tfvars -no-color'))
+subprocess.run(shlex.split('terraform plan --out=workspace/latestPlan.json -var-file=dev.tfvars -no-color'))
+subprocess.run(shlex.split('aws s3 cp workspace/latestPlan.json s3://prakashawsbucketforterraform/output/WORKSPACE-tfoutput.txt'))
 #terraform fmt -diff=true -list=true -write=false
 
 ##terraform init -force-copy -backend-config="key=prakash/terraform.tfstate" -backend-config="prakashawsbucketforterraform"
