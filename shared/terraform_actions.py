@@ -11,7 +11,7 @@ subprocess.run(shlex.split('terraform fmt -diff=true -list=true -write=false'))
 print('Terraform worked')
 
 subprocess.run(shlex.split('terraform init -force-copy -backend-config="bucket=prakashawsbucketforterraform" -backend-config="region=us-east-1" -backend-config="dynamodb_table=terraform-lock" '))
-WORKSPACE = os.environ.get('WORKSPACE_NAME')
+WORKSPACE = os.environ.get('${WORKSPACE_NAME}')
 print(WORKSPACE)
 #terraform -v
 
