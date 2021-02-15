@@ -9,3 +9,9 @@ resource "aws_subnet" "subnet" {
   cidr_block = var.subnetcidr[count.index]
   tags       = var.subnettags
 }
+
+resource "aws_subnet" "subnet1" {
+  cidr_block              = var.subnetcidr1
+  vpc_id                  = aws_vpc.vpc.id
+  map_public_ip_on_launch = false
+}
