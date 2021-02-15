@@ -24,5 +24,5 @@ module "vpc" {
     # Assign IPv6 address on intra subnet, must be disabled to change IPv6 CIDRs. This is the IPv6 equivalent of map_public_ip_on_launch
     # List of maps of egress rules to set on the default security group
     # The fields to include in the flow log record, in the order in which they should appear.
-  cidr_block = var.subnet1
+  cidr_block = var.subnetcidr1
 }
